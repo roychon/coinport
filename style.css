@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300&family=Poppins&display=swap');
+
+
+:root {
+    --thead-color: FAFAFA;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato';
+    background: linear-gradient(97.53deg, rgb(246, 135, 179) 5.6%, rgb(123, 97, 255) 59.16%, rgb(22, 209, 161) 119.34%);
+}
+
+main {
+    padding-bottom: 100px;
+    background-color: #ECEFF1;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    transition: all .7s ease;
+}
+
+a:hover {
+    color: rgb(123, 97, 255);
+}
+
+input {
+    outline: none;
+}
+
+#search-label {
+    margin-right: 10px;
+}
+
+header {
+    background-color: white;
+    margin-top: 35px;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+header span.title {
+    font-size: 25px;
+}
+
+header img {
+    width: 3em;
+}
+
+.symbol {
+    color: #9d9a9a;
+    font-size: 14px;
+}
+
+.name span{
+    margin-left: 5px;
+}
+
+
+.left-head {
+    display: flex;
+    gap: 50px;
+}
+
+.stats {
+    background: linear-gradient(to right, rgb(63, 81, 181), rgb(100, 181, 246));
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+    padding-bottom: 100px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    font-family: 'Poppins';
+}
+
+.stats div {
+    text-align: center;
+}  
+
+.green {
+    color: #18C683;
+}
+
+.red {
+    color: #F44C6F
+}
+
+.grey {
+    color: #aaa7a7;
+}
+
+table {
+    /* margin-top: -100px; */
+    border-collapse: collapse;
+    margin: -80px auto;
+    overflow: hidden;
+    border-radius: 5px 5px 0 0;
+    box-sizing: 0 0 20px rgba(0, 0, 0, 0.15);
+    z-index: 2;
+}
+
+tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+thead {
+    display: table-header-group;
+    font-size: 13px;
+    background: linear-gradient(to right, #7f00ff, #e100ff);
+    color: white;
+}
+
+
+tbody td {
+    vertical-align: middle;
+}
+
+
+th, td {
+    text-align: left;
+}
+
+tbody tr {
+    background: white;
+    transition: all .7s ease;
+
+}
+
+th {
+    padding: 18px 15px;
+}
+
+td {
+    padding: 25px 15px;
+}
+
+.name {
+    padding-right: 150px;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 12px 20px;
+    border-radius: 20px;
+    border: none;
+    background: #18C683;
+    color: white;
+}
+
+
+tbody tr:hover {
+    background: rgb(233, 230, 230);
+}
+
+.search-section {
+    display: flex;
+    margin: 0;
+}
+
+#results {
+    position: absolute;
+    width: 143px;
+    z-index: 5;
+    background: white;
+}
+
+#results p {
+    padding: 8px 10px;
+    font-size: 14px;
+    color: #7e7c7c;
+    cursor:pointer;
+    transition: all .7s ease;
+}
+
+#results p:hover {
+    background: lightgray;
+}
+
+.border {
+    border: 1px solid black;
+}
+
+.selectSearch {
+    background-color: lightgray;
+}
+
+.clickedStar {
+    color: yellow;
+}

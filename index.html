@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>coinport</title>
+        <link rel="shortcut icon" href="img/piggy2.jpeg" type="image/x-icon" />
+        <link rel="stylesheet" href="style.css" />
+        <script defer src="script.js"></script>
+        <script
+            defer
+            src="https://kit.fontawesome.com/033b80222d.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <body>
+        <header>
+            <p class="left-head">
+                <span>Coins</span>
+                <span><a href="">Watchlist</a></span>
+            </p>
+
+            <p class="title">
+                <img src="img/piggy.jpeg" alt="" />
+                <span class="title">coinport</span>
+            </p>
+
+            <div class="search-section">
+                <label for="search" id="search-label">Search Coins:</label>
+                <!-- make this div position relative and the results div position absolute -->
+                <div style="position: relative">
+                    <input type="text" name="search" id="search" />
+                    <div id="results"></div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="stats"></section>
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Rank</th>
+                        <th class="name">Name</th>
+                        <th>Price</th>
+                        <th>Market Cap</th>
+                        <th>Circulating Supply</th>
+                        <th>Supply</th>
+                        <th>Volume (24hr)</th>
+                        <th>Change (24hr)</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <button class="showMore">Show More</button>
+        </main>
+    </body>
+</html>
